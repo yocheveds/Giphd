@@ -1,0 +1,150 @@
+body {
+  margin-bottom: 150px;
+  background-image: url('love.jpg');
+  font-family: 'Shadows Into Light', cursive;
+  color: #2e2e2e;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+#tex{
+  font-size: 40px;
+  color: #6b5900;
+  font-family: 'Ceviche One', cursive;
+  text-shadow: 2px 2px #ababab;
+
+}
+
+
+/*font-family: 'Amaranth', sans-serif;
+font-family: 'Ceviche One', cursive;
+font-family: 'Fugaz One', cursive;*/
+
+.myform{
+font-family: 'Fugaz One', cursive;
+font-size: 20px;
+}
+
+
+#top {
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 90px;
+  font-family: 'Ceviche One', cursive;
+  font-size: 60px;
+  font-weight: 900px;
+  color: #6b5900;
+  background: #361212;
+  text-align: center;
+  border-color: #fd4c00;
+  text-shadow: 2px 2px #ababab;
+
+}
+
+}
+.container{
+  width: 84%;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn{
+  background-color:#361212;
+  border-color:#361212;
+  color: #ababab;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900 ;
+}
+
+#submit-btn{
+  margin-top: 5px;
+  }
+
+.form-control{
+  width:50%;
+}
+
+.form-container{
+  margin:60px auto -30px auto;
+  width:60%;
+  font-size:25px;
+}
+
+input:required,
+textarea:required {
+border-color:#fff;
+}
+
+#choosing{
+  font-size:0;
+  background:#342f28;
+  border-color:#342f28;
+}
+
+/*.footer {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  height: 10px;
+  background-color: #342f28;
+}*/
+
+#gifbox{
+  background-color:#fff;
+  padding:60px;
+  width:38%;
+  float:right;
+  margin-top:130px;
+  margin-right:50px;
+  height:200px;
+  border-radius:5px;
+  height:auto;
+}
+
+#gif-choice{
+   background-color:#342f28;
+  padding:60px;
+  width:38%;
+  float:right;
+  margin-top:50px;
+  margin-right:50px;
+  margin-bottom:50px;
+  height:200px;
+  border-radius:5px;
+  height:auto;
+}
+
+/*@media*/
+@media only screen and (max-width: 767px) {
+
+.navbar-header {
+    background-color: ##fb3765;
+  }
+
+#logo {
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 34px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: ##fb3765;
+  }
+
+#submit-btn{
+  float:left;
+  }
+
+}

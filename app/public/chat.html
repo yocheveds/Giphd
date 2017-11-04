@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Giphtd</title>
+  <link rel="icon" type="img" href="logo.png">
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="chat.css" media="screen">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Amaranth|Ceviche+One|Fugaz+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <!--script-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>s
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(button).click(function() {
+        var message = $('textarea').val();
+        var old = $('#content').html();
+
+        $('#content').html(old + '<p>' + message + "</p>");
+      })
+    });
+  </script>
+
+</head>
+
+<body>
+  <!-- navbar  -->
+  <nav id="top">
+    <div>Giphtd</div>
+  </nav>
+
+  <!--main container for everything except the chat box-->
+  <div class="container">
+
+    <div class="row" id="instruction">
+      <div class="col-md-12">
+        <p>
+          <h3>User one select a gif, user two select "like" or "dislike" once gif is displayed. If user two likes your gif- Congrats! You're a match and can chat!</h3></p>
+        <div class="row">
+          <div>
+          </div>
+          <div class="row">
+
+            <!-- userone -->
+            <div class="col-md-4" id="userOne">
+
+              <img src="queen2.jpg" height="100%" width="100%">
+              <h1 id="name">User</h1>
+            </div>
+            <!-- gif -->
+            <div class="col-md-4" id="giphy">
+            </div>
+            <!-- user two=	-->
+            <div class="col-md-4" id="userTwo">
+              <img src="king.jpg" height="100%" width="100%">
+              <h1 id="name">User</h1>
+            </div>
+          </div>
+          <!-- thumps -->
+          <div class="row" id="thumbs">
+            <div class="col-md-12">
+              <button  class = "btn" type="button" class="btn btn btn-lg">
+  			<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id ="like"></span> Like
+			</button>
+
+              <button class = "btn" type="button" class="btn btn btn-lg" id="dislike">
+  			<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> Dislike
+			</button>
+            </div>
+          </div>
+          <br>
+          <!-- chat -->
+          <h4>Lets Chat...</h4>
+          <!-- <div id="content">
+            <p>Here's our chat data</p>
+          </div> -->
+          <br>
+          <div id="message">
+            <textarea id="ara" rows="2" cols "34">Leave a message</textarea>
+          </div>
+          <br>
+          <div>
+            <button class = "postt">Post</button>
+          </div>
+        
+          <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <script src="homejava.js"></script>
+          <!-- <script src="chat.js"></script> -->
+
+          <div class="message_template">
+            <li class="message">
+              <div class="avatar"></div>
+              <div class="text_wrapper">
+                <div class="text"></div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <!-- <end of chat -->
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="homejava.js"></script>
+        <script src="chat.js"></script>
+</body>
+
+</html>
