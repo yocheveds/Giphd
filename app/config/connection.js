@@ -10,7 +10,7 @@ var connection = mysql.createConnection({
   port: 3000,
   host: "localhost",
   user: "root",
-  password: "110465110",
+  password: "",
   database: "gif_tinder2db"
 });
 
